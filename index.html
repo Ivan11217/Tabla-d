@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+    <div class="table-container">
+        <table id="dynamicTable">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>daniel</td>
+                    <td>Estudiante</td>
+                    <td>adssad@kkkd.com</td>
+                </tr>
+                <tr>
+                    <td>fdsfdf</td>
+                    <td>Profesor</td>
+                    <td>adssad@kkd</td>
+                </tr>
+                <tr>
+                    <td>trhthfdf</td>
+                    <td>Admin</td>
+                    <td>ad@kkkd.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="input-container">
+        <input type="text" id="col1Input" placeholder="Columna 1">
+        <select id="col2Input">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Profesor">Profesor</option>
+            <option value="Admin">Admin</option>
+        </select>
+        <input type="text" id="col3Input" placeholder="Columna 3">
+        <button onclick="addRow()">Agregar Fila</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
